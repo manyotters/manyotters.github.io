@@ -3046,34 +3046,7 @@
     <pages-css id="pages-css">
         <style id="css_masterPage">
 
-            #fixedMenuButton:hover{
-                color: rgb(70, 100, 70);
-                background-color: rgb(210,210,210);
-
-            }
-            #fixedMenuButton:active{
-                color: rgb(70, 100, 70);
-                background-color: rgb(160,160,160) ;
-            }
-
-            #fixedMenuButton{
-                color: black;
-                border: none;
-                padding: 2px;
-                margin-left: 30px;
-                margin-right: 30px;
-                border-radius: 5px;
-                cursor: pointer;   
-
-            }
-            .bar1, .bar2, .bar3 {
-                width: 40px;
-                height: 5px;
-                background-color: #333;
-                margin: 6px 0;
-                transition: 0.4s;
-                border-radius: 30px ;
-            }
+            
             
 
 
@@ -3284,7 +3257,7 @@
                 justify-self: start;
                 align-self: start;
                 position: absolute;
-                grid-area: 1 / 1 / 2 / 2;
+                
                 pointer-events: auto;
             }
 
@@ -4371,8 +4344,8 @@
             }
 
             #comp-lmj5igs3 {
-                width: 100px;
-                height: 100px;
+                width: 280px;
+                height:1000px
             }
         </style>
         <style id="css_tuckg">
@@ -5924,13 +5897,122 @@
                     <header class="SITE_HEADER_WRAPPER" tabindex="-1" id="SITE_HEADER_WRAPPER">
                         <div id="pinnedTopLeft" class="pinnedTopLeft">
                             <div id="comp-lmj5igs3-pinned-layer" class="comp-lmj5igs3-pinned-layer big2ZD">
-                                <div id="comp-lmj5igs3" class="OQ8Tzd comp-lmj5igs3" style="width: 100px; height: 100px; content: attr(x);">
-                                    <button id="fixedMenuButton">
-                                        <div class="bar1"></div>
-                                        <div class="bar2"></div>
-                                        <div class="bar3"></div>    
-                                    </button>
+
+                                
+
+
+                                <div id="comp-lmj5igs3" class="OQ8Tzd comp-lmj5igs3" >
+                                    <!--NOT the same code as the old wix website, Changes had to be made to insure a smooth transition without rebuilding the entire website. Start here in the class above to copy in the entire Menu button 
+                                        then move onto the style elements.-->
+                                        
+
+
+                                        <style>
+                                            #pageSelection{
+                                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                                margin: 20px;
+                                                display:inline;
+                                                 
+                                                cursor: pointer;
+                                            }
+
+
+                                            #fixedMenuButton:hover{
+                                                color: rgb(70, 100, 70);
+                                                background-color: rgb(210,210,210);
+
+                                            }
+                                            #fixedMenuButton:active{
+                                                color: rgb(70, 100, 70);
+                                                background-color: rgb(160,160,160) ;
+                                            }
+
+                                            #fixedMenuButton{
+                                                z-index: 2;
+                                                color: black;
+                                                border: none;
+                                                padding: 2px;
+                                                margin-left: 30px;
+                                                margin-right: 30px;
+                                                border-radius: 5px;
+                                                cursor: pointer;
+
+                                            }
+                                            .bar1, .bar2, .bar3 {
+                                                width: 40px;
+                                                height: 5px;
+                                                background-color: #333;
+                                                margin: 6px 0;
+                                                transition: 0.4s;
+                                                border-radius: 30px ;
+                                            }
+                                            .change .bar1 {
+                                                transform: translate(0, 11px) rotate(-45deg);
+                                            }
+
+                                            .change .bar2 {opacity: 0;}
+
+                                            .change .bar3 {
+                                                transform: translate(0, -11px) rotate(45deg);
+                                            }
+                                            .change .wrapperButton{
+                                                background-color:rgb(210,210,210);
+                                                padding: 2px;
+                                                margin: auto;
+                                                border-radius: 5px;
+                                            }
+                                            #navBar{
+                                              color: skyblue;  
+                                              box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+                                              padding:40px;
+                                              background-image:linear-gradient(white,grey,black);
+                                              width: 200px;
+                                              height: 100%;
+                                              opacity: .5;
+                                              display: none;
+                                                 
+                                            }
+                                            
+
+
+                                            /*Above Code is only made for the UI Button.to select menu options*/
+                                        </style>
+
+
+
                                     
+                                        <button id="fixedMenuButton" onclick="myFunction(this);toggleNavMenu()">
+                                            <div class="wrapperButton">
+                                                <div class="bar1"></div>
+                                                <div class="bar2"></div>
+                                                <div class="bar3"></div>   
+                                            </div> 
+                                        </button>
+                                        <div id="navBar">
+                                            <nav id="pageSelection">
+                                                <a href="index.htm">HOME</a>
+                                                <a href="NEWS.htm">News</a>
+                                            </nav>
+                                        </div>
+                                        
+                                    
+
+                                        <!--End Button Parent Class and Menu Bar. Hopefully.-->
+                                        <script>
+                                            function myFunction(x) {
+                                                x.classList.toggle("change");
+                                            }
+                                            function toggleNavMenu() {
+                                                var x = document.getElementById("navBar");
+                                                if (x.style.display === "none") {
+                                                    x.style.display = "block";
+                                                } else {
+                                                    x.style.display = "none";
+                                                }
+                                            }
+
+                                           
+                                        </script>
                                 </div>
                             </div>
                         </div>
@@ -5939,10 +6021,15 @@
                             <div class="cKxVkc">
                                 <div class="vlM3HR"></div>
                                 <div class="VrZrC0">
+
                                     <div data-mesh-id="SITE_HEADERinlineContent" data-testid="inline-content" class="">
                                         <div data-mesh-id="SITE_HEADERinlineContent-gridContainer"
                                             data-testid="mesh-container-content"></div>
                                     </div>
+
+
+
+
                                 </div>
                             </div>
                         </div>
