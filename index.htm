@@ -5908,13 +5908,7 @@
 
 
                                         <style>
-                                            #pageSelection{
-                                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                                                margin: 20px;
-                                                display:inline;
-                                                 
-                                                cursor: pointer;
-                                            }
+                                            
 
 
                                             #fixedMenuButton:hover{
@@ -5947,13 +5941,13 @@
                                                 border-radius: 30px ;
                                             }
                                             .change .bar1 {
-                                                transform: translate(0, 11px) rotate(-45deg);
+                                                transform: translate(0, 11px) rotate(45deg);
                                             }
 
                                             .change .bar2 {opacity: 0;}
 
                                             .change .bar3 {
-                                                transform: translate(0, -11px) rotate(45deg);
+                                                transform: translate(0, -11px) rotate(-45deg);
                                             }
                                             .change .wrapperButton{
                                                 background-color:rgb(210,210,210);
@@ -5961,18 +5955,39 @@
                                                 margin: auto;
                                                 border-radius: 5px;
                                             }
-                                            #navBar{
+                                            #titleBar{
+                                                margin: 63px;
+                                                
+                                            }
+                                            .pageBar{
                                               color: skyblue;  
                                               box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-                                              padding:40px;
+                                              
                                               background-image:linear-gradient(white,grey,black);
-                                              width: 200px;
+                                              width: 280px;
                                               height: 100%;
-                                              opacity: .5;
+                                              
                                               display: none;
-                                                 
+                                            }
+                                            .pageBar.change{
+                                                display:block
+                                            }
+
+                                            #pageNav{
+                                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                                margin: 20px;
+                                                display:block;
+                                                cursor: pointer;
+                                                padding-top: 130px;
+                                            }
+                                            .hidden{
+                                                display: none;
+                                            }
+                                            .visible{
+                                                display:block;
                                             }
                                             
+                                
 
 
                                             /*Above Code is only made for the UI Button.to select menu options*/
@@ -5988,10 +6003,16 @@
                                                 <div class="bar3"></div>   
                                             </div> 
                                         </button>
-                                        <div id="navBar">
-                                            <nav id="pageSelection">
+                                        <div class="pageBar hidden">
+                                            <h1 id="titleBar">MANY OTTERS</h1>
+                                            <nav id="pageNav">
                                                 <a href="index.htm">HOME</a>
-                                                <a href="NEWS.htm">News</a>
+                                                <a href="NEWS.htm">NEWS</a>
+                                                <a href="PROJECTS My Site 6 Copy.htm">PROJECTS</a>
+                                                <a href="AUTHORSHIP GUIDELINES.htm">AUTHORSHIP</a>
+                                                <a href="ETHICS GUIDELINES.htm">ETHICS</a>
+                                                <a href="MEMBERSHIP GUIDELINES.htm">MEMBERSHIP</a>
+                                                <a href="CONTACT">CONTACT</a>
                                             </nav>
                                         </div>
                                         
@@ -6002,15 +6023,22 @@
                                             function myFunction(x) {
                                                 x.classList.toggle("change");
                                             }
-                                            function toggleNavMenu() {
-                                                var x = document.getElementById("navBar");
-                                                if (x.style.display === "none") {
-                                                    x.style.display = "block";
-                                                } else {
-                                                    x.style.display = "none";
+                                            const page_Bar =document.querySelector(".pageBar");
+                                            function openMenu(){
+                                                const parent1 = document.querySelector('.pageBar');
+                                                activeMenu = parent1.classList.contains('visible');
+                                                hiddenMenu = parent1.classList.contains('hidden');
+                                                if(hiddenMenu){
+                                                    parent1.classList.remove('hidden');
+                                                    parent1.classList.add('visible');
+                                                }
+                                                else{
+                                                    parent1.classList.remove('visible');
+                                                    parent1.classList.add('hidden');
                                                 }
                                             }
-
+                                            
+                                            document.getElementById("fixedMenuButton").addEventListener('click',openMenu)
                                            
                                         </script>
                                 </div>
@@ -7181,7 +7209,7 @@
                                                     target="_self" class="u9k3ts">
                                                     <div data-testid="svgRoot-comp-llh14t3n"
                                                         class="aizuI7 TcoJIb comp-llh14t3n">
-                                                        <!--?xml version="1.0" encoding="UTF-8"?-->
+                                                        <!--?xml version="1.0" encoding="UTF-8"?--> A
                                                         <svg preserveAspectRatio="xMidYMid meet"
                                                             data-bbox="20 20.394 159.999 159.212"
                                                             xmlns="http://www.w3.org/2000/svg" width="200" height="200"
