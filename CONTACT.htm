@@ -6391,8 +6391,7 @@
                         <div id="pinnedTopLeft" class="pinnedTopLeft">
                             <div id="comp-lmj5igs3-pinned-layer" class="comp-lmj5igs3-pinned-layer big2ZD">
                                 <div id="comp-lmj5igs3" class="OQ8Tzd comp-lmj5igs3"
-                                    >
-                                    <!--NOT the same code as the old wix website, Changes had to be made to insure a smooth transition without rebuilding the entire website. Start here in the class above to copy in the entire Menu button 
+                                    ><!--NOT the same code as the old wix website, Changes had to be made to insure a smooth transition without rebuilding the entire website. Start here in the class above to copy in the entire Menu button 
                                         then move onto the style elements.-->
                                         
 
@@ -6446,36 +6445,52 @@
                                                 border-radius: 5px;
                                             }
                                             #titleBar{
-                                                margin: 63px;
+                                                color: black;
+                                                margin-left: 10%;
+                                                margin-top:63px;
                                                 
+                                                font-size: 30px;
+                                                font-family:'Times New Roman', Times, serif;
+                                                font-weight: bold;
                                             }
                                             .pageBar{
                                               color: skyblue;  
-                                              box-shadow: 1px 2px 3px rgba(0,0,0,.5);
                                               
-                                              background-image:linear-gradient(white,grey,black);
+                                              background-image:linear-gradient(rgb(255, 255, 255),rgb(237, 237, 237),rgb(198, 198, 198),rgb(161, 160, 160),rgb(111, 111, 111),rgb(46, 46, 46));
                                               width: 280px;
                                               height: 100%;
-                                              
                                               display: none;
+                                              flex-direction: column;
                                             }
-                                            .pageBar.change{
-                                                display:block
-                                            }
+                                            
 
                                             #pageNav{
                                                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                                                 margin: 20px;
-                                                display:block;
+                                                font-size: 35px;
+                                                display:flex;
+                                                flex-direction: column;
                                                 cursor: pointer;
-                                                padding-top: 130px;
+                                                padding-top: 65px;
+                                                
+
                                             }
                                             .hidden{
                                                 display: none;
                                             }
                                             .visible{
-                                                display:block;
+                                                display:flex;
+
                                             }
+                                            #pageNav a:hover{
+                                                color: rgb(86, 0, 86);
+                                            }
+                                            #pageNav a{
+                                                color: rgb(0, 0, 0);
+                                                border-color: #464c52;
+                                                border-bottom: solid;
+                                            }
+                                            
                                             
                                 
 
@@ -6507,8 +6522,6 @@
                                         </div>
                                         
                                     
-
-                                        <!--End Button Parent Class and Menu Bar. Hopefully.-->
                                         <script>
                                             function myFunction(x) {
                                                 x.classList.toggle("change");
@@ -6531,8 +6544,10 @@
                                             document.getElementById("fixedMenuButton").addEventListener('click',openMenu)
                                            
                                         </script>
+                                        
+                                        <!--End Button Parent Class and Menu Bar. Hopefully.-->
                                     
-                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div id="SITE_HEADER" class="AT7o0U SITE_HEADER wixui-header" tabindex="-1">

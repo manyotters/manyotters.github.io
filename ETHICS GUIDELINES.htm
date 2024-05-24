@@ -7637,36 +7637,52 @@
                                                 border-radius: 5px;
                                             }
                                             #titleBar{
-                                                margin: 63px;
+                                                color: black;
+                                                margin-left: 10%;
+                                                margin-top:63px;
                                                 
+                                                font-size: 30px;
+                                                font-family:'Times New Roman', Times, serif;
+                                                font-weight: bold;
                                             }
                                             .pageBar{
                                               color: skyblue;  
-                                              box-shadow: 1px 2px 3px rgba(0,0,0,.5);
                                               
-                                              background-image:linear-gradient(white,grey,black);
+                                              background-image:linear-gradient(rgb(255, 255, 255),rgb(237, 237, 237),rgb(198, 198, 198),rgb(161, 160, 160),rgb(111, 111, 111),rgb(46, 46, 46));
                                               width: 280px;
                                               height: 100%;
-                                              
                                               display: none;
+                                              flex-direction: column;
                                             }
-                                            .pageBar.change{
-                                                display:block
-                                            }
+                                            
 
                                             #pageNav{
                                                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                                                 margin: 20px;
-                                                display:block;
+                                                font-size: 35px;
+                                                display:flex;
+                                                flex-direction: column;
                                                 cursor: pointer;
-                                                padding-top: 130px;
+                                                padding-top: 65px;
+                                                
+
                                             }
                                             .hidden{
                                                 display: none;
                                             }
                                             .visible{
-                                                display:block;
+                                                display:flex;
+
                                             }
+                                            #pageNav a:hover{
+                                                color: rgb(86, 0, 86);
+                                            }
+                                            #pageNav a{
+                                                color: rgb(0, 0, 0);
+                                                border-color: #464c52;
+                                                border-bottom: solid;
+                                            }
+                                            
                                             
                                 
 
@@ -7698,8 +7714,6 @@
                                         </div>
                                         
                                     
-
-                                        <!--End Button Parent Class and Menu Bar. Hopefully.-->
                                         <script>
                                             function myFunction(x) {
                                                 x.classList.toggle("change");
@@ -7721,7 +7735,9 @@
                                             
                                             document.getElementById("fixedMenuButton").addEventListener('click',openMenu)
                                            
-                                        </script>    
+                                        </script>
+                                        
+                                        <!--End Button Parent Class and Menu Bar. Hopefully.-->
                                 </div>
                             </div>
                         </div>
