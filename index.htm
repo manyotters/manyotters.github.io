@@ -5960,36 +5960,43 @@
                                                 border-radius: 5px;
                                             }
                                             #titleBar{
-                                                margin: 63px;
+                                                margin-left: 63px;
+                                                margin-top:63px;
                                                 
                                             }
                                             .pageBar{
                                               color: skyblue;  
-                                              box-shadow: 1px 2px 3px rgba(0,0,0,.5);
                                               
-                                              background-image:linear-gradient(white,grey,black);
+                                              background-image:linear-gradient(rgb(255, 255, 255),rgb(237, 237, 237),rgb(198, 198, 198),rgb(161, 160, 160),rgb(111, 111, 111),rgb(46, 46, 46));
                                               width: 280px;
                                               height: 100%;
-                                              
                                               display: none;
+                                              flex-direction: column;
                                             }
-                                            .pageBar.change{
-                                                display:block
-                                            }
+                                            
 
                                             #pageNav{
                                                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                                                 margin: 20px;
-                                                display:block;
+                                                font-size: 35px;
+                                                display:flex;
+                                                flex-direction: column;
                                                 cursor: pointer;
                                                 padding-top: 130px;
+                                                
+
                                             }
                                             .hidden{
                                                 display: none;
                                             }
                                             .visible{
-                                                display:block;
+                                                display:flex;
+
                                             }
+                                            #pageNav a:hover{
+                                                color: whitesmoke;
+                                            }
+                                            
                                             
                                 
 
@@ -6016,13 +6023,11 @@
                                                 <a href="AUTHORSHIP GUIDELINES.htm">AUTHORSHIP</a>
                                                 <a href="ETHICS GUIDELINES.htm">ETHICS</a>
                                                 <a href="MEMBERSHIP GUIDELINES.htm">MEMBERSHIP</a>
-                                                <a href="CONTACT">CONTACT</a>
+                                                <a href="CONTACT.htm">CONTACT</a>
                                             </nav>
                                         </div>
                                         
                                     
-
-                                        <!--End Button Parent Class and Menu Bar. Hopefully.-->
                                         <script>
                                             function myFunction(x) {
                                                 x.classList.toggle("change");
@@ -6045,6 +6050,8 @@
                                             document.getElementById("fixedMenuButton").addEventListener('click',openMenu)
                                            
                                         </script>
+                                        
+                                        <!--End Button Parent Class and Menu Bar. Hopefully.-->
                                 </div>
                             </div>
                         </div>
