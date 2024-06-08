@@ -1,0 +1,33 @@
+#headStaff{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 35px;
+  flex-wrap: wrap;
+
+}
+.staffNames{
+  font-size: 19px;
+  color: black;
+  padding: 15px;
+  align-self: center;
+  min-width: 20px;
+  max-width: 160px;
+}
+.memberDetail{
+  font-size: 16px; 
+  font-family:'Times New Roman', Times, serif;
+}
+.greyContainer{
+  color: rgb(46, 45, 45);
+  border:solid;
+  background-color: rgb(158, 157, 157);
+  border-color: rgb(68, 67, 67);
+  border-radius: 10px;
+}
+
+.profilePicture{
+  display:flex;
+  border-radius: 100%;
+  padding: 15px;
+}
