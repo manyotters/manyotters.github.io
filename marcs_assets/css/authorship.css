@@ -1,0 +1,30 @@
+.listBox1{
+  background-color: rgb(168, 168, 168);
+  color: black;
+  display: inline-block;
+  
+
+  width: 100%;
+  padding: 10px;
+  margin: 2px;
+  border: solid ; 
+  border-color: rgb(78, 78, 78) ;
+  border-radius: 8px;
+  box-shadow: 8px 9px 15px rgb(172, 172, 172);
+  text-wrap:pretty;
+
+}
+.listBox2{
+  background-color: rgb(204, 204, 204);
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  width: 100%;
+
+  padding: 10px;
+  border:solid ;
+  border-color: rgb(78, 78, 78) ;
+  border-radius: 8px;
+  box-shadow: 8px 9px 15px rgb(172, 172, 172);
+  margin: 2px;
+  text-wrap:pretty;
+}
