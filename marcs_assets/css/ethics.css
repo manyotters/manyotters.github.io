@@ -1,0 +1,15 @@
+.footPrintSize{ 
+  width: 130px;
+  
+}
+.printTypeA{
+  rotate: 20deg;
+  opacity: 77%;
+  
+}
+.printTypeB{
+  opacity: 87%;
+}
+.PrintTypeC{
+  opacity: 97%;
+}
