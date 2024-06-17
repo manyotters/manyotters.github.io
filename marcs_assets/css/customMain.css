@@ -1,0 +1,16 @@
+:root{
+  --colorLogoA: #8a94d9;
+  --colorLogoB: #6f9298;
+  --colorLogoC: #9bb6ad;
+  --colorLogoCText:#6b8079;
+}
+
+.otterColor1{
+  color: var(--colorLogoA);
+}
+.otterColor2{
+ color:var(--colorLogoB)
+}
+.otterColor3{
+  color: var(--colorLogoC);
+}

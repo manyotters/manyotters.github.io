@@ -6,6 +6,17 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+:root{
+  --colorLogoA: #8a94d9;
+  --colorLogoB: #6f9298;
+  --colorLogoC: #9bb6ad;
+  --colorLogoCText:#6b8079;
+  --oldUiColor:#f45c5c;
+}
+
+
+
+
 html,
 body,
 div,
@@ -2573,8 +2584,8 @@ button,
   background-color: transparent;
   border-radius: 0.375em;
   border: 0;
-  box-shadow: inset 0 0 0 2px #f56a6a;
-  color: #f56a6a !important;
+  box-shadow: inset 0 0 0 2px var(--colorLogoA);
+  color: var(--colorLogoC) !important;
   cursor: pointer;
   display: inline-block;
   font-family: "Roboto Slab", serif;
@@ -2645,7 +2656,7 @@ input[type="reset"].primary,
 input[type="button"].primary,
 button.primary,
 .button.primary {
-  background-color: #f56a6a;
+  background-color: var(--colorLogoA);
   box-shadow: none;
   color: #ffffff !important;
 }
@@ -2655,7 +2666,7 @@ input[type="reset"].primary:hover,
 input[type="button"].primary:hover,
 button.primary:hover,
 .button.primary:hover {
-  background-color: #f67878;
+  background-color: var(--colorLogoA);
 }
 
 input[type="submit"].primary:active,
@@ -2663,7 +2674,7 @@ input[type="reset"].primary:active,
 input[type="button"].primary:active,
 button.primary:active,
 .button.primary:active {
-  background-color: #f45c5c;
+  background-color: var(--colorLogoA);
 }
 
 input[type="submit"].disabled,
@@ -2762,7 +2773,7 @@ button:disabled,
 }
 
 .features article .icon:before {
-  color: #f56a6a;
+  color: var(--colorLogoA);
   font-size: 2.75rem;
   position: relative;
   top: 0.05em;

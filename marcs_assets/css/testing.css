@@ -1,0 +1,35 @@
+:root{
+  --colorLogoA: #8a94d9;
+  --colorLogoB: #6f9298;
+  --colorLogoC: #9bb6ad;
+}
+body{
+  color: whitesmoke ;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.type1{
+  color: var(--colorLogoA);
+  border-color: var(--colorLogoA);
+  border-bottom:solid;
+}
+
+.type2{
+  color: var(--colorLogoB);;
+  border-color: var(--colorLogoB);
+  border-bottom:solid;
+}
+.type3{
+  color:var(--colorLogoC);
+  border-color: var(--colorLogoC);
+  border-bottom:solid;
+}
+#bar{
+  color: yellow;
+  background-color: yellow;
+  width: 100px;
+  height: 15px;
+}
+
