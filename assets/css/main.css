@@ -265,13 +265,13 @@ a {
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
-  color: #f56a6a;
+  color: var(--colorLogoA);
   text-decoration: none;
 }
 
 a:hover {
-  border-bottom-color: #f56a6a;
-  color: #f56a6a !important;
+  border-bottom-color: var(--colorLogoB);
+  color:#9197ce !important;
 }
 
 a:hover strong {
@@ -1904,7 +1904,7 @@ header p {
 }
 
 header.major> :last-child {
-  border-bottom: solid 3px #f56a6a;
+  border-bottom: solid 3px var(--colorLogoC);
   display: inline-block;
   margin: 0 0 2em 0;
   padding: 0 0.75em 0.5em 0;
@@ -2079,8 +2079,8 @@ input[type="radio"]:checked+label:before {
 
 input[type="checkbox"]:focus+label:before,
 input[type="radio"]:focus+label:before {
-  border-color: #f56a6a;
-  box-shadow: 0 0 0 1px #f56a6a;
+  border-color: var(--colorLogoA);
+  box-shadow: 0 0 0 1px var(--colorLogoA);
 }
 
 input[type="checkbox"]+label:before {
@@ -2585,7 +2585,7 @@ button,
   border-radius: 0.375em;
   border: 0;
   box-shadow: inset 0 0 0 2px var(--colorLogoA);
-  color: var(--colorLogoC) !important;
+  color: var(--colorLogoCText) !important;
   cursor: pointer;
   display: inline-block;
   font-family: "Roboto Slab", serif;
@@ -3404,7 +3404,7 @@ button:disabled,
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  border-bottom: solid 5px #f56a6a;
+  border-bottom: solid 5px var(--colorLogoC);
   padding: 6em 0 1em 0;
   position: relative;
 }
@@ -3590,7 +3590,7 @@ button:disabled,
 
 #menu ul a:hover,
 #menu ul span:hover {
-  color: #f56a6a;
+  color: var(--colorLogoA);
 }
 
 #menu ul a.opener,
@@ -3632,7 +3632,7 @@ button:disabled,
 
 #menu ul a.opener:hover:before,
 #menu ul span.opener:hover:before {
-  color: #f56a6a;
+  color: var(--colorLogoA);
 }
 
 #menu ul a.opener.active+ul,
