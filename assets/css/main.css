@@ -1970,8 +1970,8 @@ input[type="search"]:focus,
 input[type="url"]:focus,
 select:focus,
 textarea:focus {
-  border-color: #f56a6a;
-  box-shadow: 0 0 0 1px #f56a6a;
+  border-color: var(--colorLogoA);
+  box-shadow: 0 0 0 1px var(--colorLogoA);
 }
 
 select {
@@ -2412,7 +2412,7 @@ ul.contact li:before {
 }
 
 ul.contact li:before {
-  color: #f56a6a;
+  color: var(--colorLogoA);
   display: inline-block;
   font-size: 1.5em;
   height: 1.125em;
@@ -2470,16 +2470,16 @@ ul.pagination li>.page {
 }
 
 ul.pagination li>.page.active {
-  background-color: #f56a6a;
+  background-color: var(--colorLogoA);
   color: #ffffff !important;
 }
 
 ul.pagination li>.page.active:hover {
-  background-color: #f67878;
+  background-color: var(--colorLogoA);
 }
 
 ul.pagination li>.page.active:active {
-  background-color: #f45c5c;
+  background-color: var(--colorLogoA);
 }
 
 ul.pagination li:first-child {
