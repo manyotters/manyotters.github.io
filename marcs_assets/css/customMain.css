@@ -14,3 +14,9 @@
 .otterColor3{
   color: var(--colorLogoC);
 }
+
+.linkedIcon, .linkedIcon:active, .linkedIcon:hover{
+  text-decoration: none;
+  outline: 0;
+  border:0;
+}
