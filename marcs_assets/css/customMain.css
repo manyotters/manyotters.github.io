@@ -20,3 +20,23 @@
   outline: 0;
   border:0;
 }
+
+.manyManys{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.manyLogos{
+  width: 100px;
+  min-height: 40px;
+  max-height: 120px;
+  margin: 5px;
+}
+
+@media (max-width: 780px) {
+  
+    .manyManys{
+      display: flex;
+      flex-direction: column;
+    }
+}
