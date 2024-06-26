@@ -32,6 +32,16 @@
   max-height: 120px;
   margin: 5px;
 }
+.statusSection{
+  display: flex;
+  flex-direction: row;
+  text-wrap:pretty;
+  
+}
+
+
+
+
 
 @media (max-width: 780px) {
   
