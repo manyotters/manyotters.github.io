@@ -30,7 +30,11 @@
   width: 100px;
   min-height: 40px;
   max-height: 120px;
-  margin: 5px;
+  
+  display: block;
+  width: 85%;
+  margin: auto;
+  padding: auto;
 }
 .statusSection{
   display: flex;
