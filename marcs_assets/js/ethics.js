@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Remove footprint after animation completes
       setTimeout(() => {
           container.removeChild(footprint);
-      }, 5000);
+      }, 3500);
   }
 
   // Create footprints at intervals
