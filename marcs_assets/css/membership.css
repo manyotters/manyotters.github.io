@@ -13,6 +13,7 @@
   align-self: center;
   min-width: 20px;
   max-width: 160px;
+  text-wrap: nowrap;
 }
 .memberDetail{
   font-size: 16px; 
