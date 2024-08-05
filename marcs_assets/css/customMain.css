@@ -96,5 +96,6 @@ a{
     .manyManys{
       display: flex;
       flex-direction: column;
+      width: 12em;
     }
 }
