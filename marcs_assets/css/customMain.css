@@ -99,3 +99,16 @@ a{
       width: 12em;
     }
 }
+
+h2 {
+    margin-bottom: 0.3em;
+}
+
+ul {
+    margin-top: 0.2em;
+}
+
+ul li {
+    margin-bottom: 0.3em;
+}
+
