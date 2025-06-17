@@ -44,6 +44,30 @@
   
 }
 
+.logoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.participatingFacilities {
+    /* OPTIONAL: only if you want spacing around the whole section */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.participatingFacilities .facilityLogo {
+    width: auto;
+    height: 100px;
+    object-fit: contain;
+    margin: 20px;
+    
+}
+
 /*Footprint Raining Animation f   Otters*/
 
 
@@ -110,5 +134,23 @@ ul {
 
 ul li {
     margin-bottom: 0.3em;
+}
+
+ul {
+    padding-left: 1.2em;
+    margin-top: 1.5em;
+}
+
+ul li {
+    margin-bottom: 0.3em;
+}
+
+.responsiveprojectimage {
+    max-width: 100%;
+    max-height: 1000px; /* adjust this number to your liking */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
 }
 
