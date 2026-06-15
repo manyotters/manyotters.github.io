@@ -35,8 +35,8 @@
 
 /* Reformat as table */
 table {
-  font-family: arial, sans-serif;
-  border: 1px solid black;
+  font-family: 'FontAwesome', sans-serif;
+  border: 5px solid black;
   border-radius: 10px;
   width: 100%;
 }
